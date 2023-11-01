@@ -106,20 +106,20 @@ color:red;
  flex-direction: column;
 }
 .US {
-    /* flex-direction: row;
+    flex-direction: row;
     margin: 50px;
     padding: 5rem; ;
     display: flex;
     justify-content: stretch;
-    align-items:end ; */
-  display: inline-block;
+    align-items:end ;
+  /* display: inline-block;
   padding-top: 10px;
   width: 100px;
   height: 100px;
   background: red;
-  color: white;
+  color: white;  */
 
 }
 .table primary {
-    margin: 0px;
+    margin: 10px;
 }
