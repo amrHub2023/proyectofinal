@@ -9,9 +9,9 @@
                 <div class="col-md-6">
                     
                     <h2>Listado de Comentarios</h2>
-                    {% for i in vista %}
+                    
                     <div class="table-responsive">
-
+                        {% for i in vista %}
                         <table class="table primary">
                             <thead>
                             <tr>
@@ -29,21 +29,11 @@
                                 <td>{{ i.phone }}</td>
                                 <td>{{ i.email }}</td>
                                 <td>{{ i.message }}</td>
-                            </tr>
-                            {% comment %} <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr> {% endcomment %}
+                            </tr>                          
                             </tbody>
-                        </table>                        
                         {% endfor %}
+                        </table>                        
+                        
                     </div>
                 </div>   
             </div>      
