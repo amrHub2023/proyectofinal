@@ -1,0 +1,27 @@
+{% extends 'Layout/base.html' %}
+
+{% block content %}
+  
+    <div class="container">
+        <div class="US">
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-1">
+                        <form action="create_contact/" method="POST">
+                            {% csrf_token %}
+                            {{ create_contact }}
+                                <input type="submit" value="Send" />                      
+                            
+                        </form>
+                    </div>
+                </div>    
+            </div>
+        </div>    
+    </div>  
+
+      
+{% endblock %} 
+
+
+
+

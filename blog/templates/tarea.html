@@ -1,0 +1,19 @@
+{% extends '/Layout/base.html' %}
+
+{% block content  %}
+    <h1>Tarea definido del modelo Tarea</h1>
+
+
+    {% for t in tarea %}
+
+    <div> 
+        <h2>{{ t.titulo }}</h2>
+        <p>{{ t.descripcion }}</p>
+        <p>Projects: {{ t.proyecto.name }}</p>
+    </div>
+
+
+    {% endfor %}
+
+
+{% endblock %}

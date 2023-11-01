@@ -1,0 +1,20 @@
+{% extends 'Layout/base.html' %} 
+
+
+{% block content %}
+<div class="container">
+    <div class="texto">
+            <div class="content">
+                    <h1> Projects</h1>
+                    
+
+                    {% for pepe in projects %}
+
+                    <h2>
+                        <p>Nombre de proyecto: {{ pepe.name }}</p>     
+                    </h2>
+                    {% endfor %}
+            </div>
+    </div>        
+</div>    
+{% endblock %}
